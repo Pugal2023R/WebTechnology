@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0;
+    }
+    .one-main{
+    background: url(./background-1.svg) no-repeat center/cover ;
+    height: 100vh;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "navbar";
+}
+.navbar{
+        background-color: rgba(19, 18, 18, 0.253);
+        grid-area: navbar;
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        opacity: .5;
+}
+.one-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224, 219, 219) ;
+        width: 100%;
+        height: 7rem;
+        gap: 50rem;
+        /* padding: 2rem; */
+        background-color: transparent
+}
+.one-inner img{
+    width: 8rem;
+    color: transparent;
+}
+.one-menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.one-menu a:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
+.menu{
+    background: url(./banner.webp) no-repeat center/cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 2px;
+    padding: 1rem 8rem 0 8rem;
+}
+.menu-1{
+    overflow:hidden;
+    margin-top: 2rem;
+}
+.menu-1 a{
+    text-decoration: none;
+    color: white;
+}
+.menu-1 a:hover{
+    cursor: pointer;
+    color: gray;
+}
+.menu-1 img:hover{
+    cursor: pointer;
+    color: gray;
+}
+.fff h4 {
+    background:linear-gradient(to right ,blueviolet,rgb(252, 94, 120));
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+
+@media (min-width: 1px) and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar{
+        height: 100px;
+        position: fixed;
+    }
+
+    .one-inner{
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .one-inner img{
+        width: 4rem;
+    }
+
+    .one-menu a{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Main Section */
+
+    .one-main{
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    /* Menu Grid */
+
+    .menu{
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    /* .menu-1 a{
+        max-width: 50px;
+        margin-top: 1rem;
+    } */
+
+    .menu-1 a img{
+        width: 100%;
+        max-width: 50px;
+    }
+
+    /* .menu-1 img{
+        width: 100%;
+        max-width: 70px;
+    } */
+    #mmm{
+        width: 20px;
+    }
+    .menu-1 h1{
+        font-size: 20px;
+    }
+
+    /* Footer bar */
+
+    .fff h4{
+        font-size: 14px;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+}
+
+
+
+</style>
+<body>
+     <nav class="navbar">
+              <div class="one-inner">
+            <div class="one-img">
+                 <img src="./brand_logo.svg" alt="">
+            </div>
+            <div class="one-menu">
+                <a href="./knight.html">Home</a>
+                <a href="./knight_about.html">About</a>
+                <a href="./knight_menu.html">Menu</a>
+                <a href="./franchise.html">Franchise</a>
+            </div>
+        </div>
+        </nav>
+        <div class="menu">
+            <div class="menu-1">
+                <a href="">
+                <img src="./burger-icon-menu.png" alt="">
+                <h1>Burgers</h1>
+                <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+             <div class="menu-1">
+                <a href="">
+                <img src="./starters-icon-menu.png" alt="">
+                <h1>Fries/Starters</h1>
+                 <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+             <div class="menu-1">
+                <a href="">
+                <img src="./main-course-icon-menu.png" alt="">
+                <h1>Main Course</h1>
+                 <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+             <div class="menu-1">
+                <a href="">
+                <img src="./drinks-icon-menu.png" alt="">
+                <h1>Drinks</h1>
+                 <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+             <div class="menu-1">
+                <a href="">
+                <img src="./wrap-icon-menu.png" alt="">
+                <h1>Wraps</h1>
+                 <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+             <div class="menu-1">
+                <a href="">
+                <img src="./desserts-icon-menu.png" alt="">
+                <h1>Desserts</h1>
+                 <img id="mmm" src="./add-plus-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="fff">
+            <h4>&copy Copyright 2026. Knight Bite. All Rights Reserved;</h4>
+        </div>
+</body>
+</html>

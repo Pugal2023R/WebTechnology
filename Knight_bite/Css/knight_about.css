@@ -1,0 +1,303 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+.ab-one{
+    background: url(./ab-banner\ \(1\).webp) no-repeat center/cover;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "navbar";
+}
+.navbar{
+        background-color: rgba(19, 18, 18, 0.253);
+        grid-area: navbar;
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        opacity: .5;
+}
+.one-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(224, 219, 219) ;
+        width: 100%;
+        height: 7rem;
+        gap: 50rem;
+        /* padding: 2rem; */
+        background-color: transparent
+}
+.one-inner img{
+    width: 8rem;
+    /* color: transparent; */
+}
+.one-menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.one-menu a:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
+.ab-one h1{
+    font-size: 50px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    text-transform: uppercase;
+    width: 45vw;
+    margin:10rem 0 4rem 4rem;
+
+}
+.wd{
+    width: 50vw;
+    height: 50vh;
+}
+.ab-two-1{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 50vh; 
+    gap: 2rem;  
+    margin: 0 6rem;
+}
+.ab-two-inner-1 img{
+    width: 400px;
+    padding: 40px;
+    margin-top: 4rem;
+}
+.ab-two-inner-1 p{
+    font-size: 23px;
+    margin-top: 4rem;
+    word-spacing: 5px;
+    /* align-items: center; */
+}
+.ab-two-2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+    height: 50vh; 
+    gap: 2rem;
+    margin: 0 6rem;
+}
+.ab-two-inner-2 img{
+    width: 600px;
+    padding-left: 7rem;
+    padding-right: 2rem;
+}
+.ab-two-inner-2 p{
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-top: 4rem;
+}
+.ab-two-3{
+    height: 50vh;
+    /* border: 1px solid black; */
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+}
+.ab-two-inner-3 img{
+    width: 550px;
+    height: 360px;
+}
+.ab-two-inner-3 p{
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-top: 8rem;
+}
+.ab-two-4{
+    margin-top: 8rem;
+    display: flex;
+    gap: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 30vh;
+}
+.ab-two-4 h1{
+    font-size: 40px;
+
+}
+.ab-two-inner-4 {
+    margin-top: 7rem;
+    margin-left: -14rem;
+}
+.ab-two-inner-4 p{
+    font-size: 20px;
+    word-spacing: 5px;
+}
+.ab-two-inner-4 h1{
+    margin-left: 10rem;
+    margin-top: -5rem;
+}
+.aaa{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.foot h4{
+    text-align: center;
+    background:linear-gradient(to right ,blueviolet,rgb(252, 94, 120));
+    height: 50px;
+    align-content: center;
+    color: white;
+    margin-top: 11.2rem;
+}
+p{
+    color: rgb(107, 98, 98);
+}
+
+.hhh{
+    font-size: 25px;
+    color: rgb(71, 64, 64);
+}
+
+
+
+
+
+@media (min-width: 1px) and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar{
+        height: 100px;
+        position: fixed;
+    }
+
+    .one-inner{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .one-inner img{
+        width: 4rem;
+    }
+
+    .one-menu a{
+        color: white;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Banner Section */
+
+    .ab-one{
+        height: 100vh;
+        padding-bottom: 4rem;
+    }
+
+    .ab-one h1{
+        font-size: 25px;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        margin: 8rem 1rem 2rem 1rem;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+
+    .wd{
+        width: 100%;
+        height: auto;
+    }
+
+    /* About Sections */
+
+    .ab-two-1,
+    .ab-two-2,
+    .ab-two-3,
+    .ab-two-4{
+        flex-direction: column;
+        height: auto;
+        margin: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .ab-two-inner-1 img{
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .ab-two-inner-2 img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .ab-two-inner-3 img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Text sizes */
+
+    .ab-two-inner-1 p,
+    .ab-two-inner-2 p,
+    .ab-two-inner-3 p,
+    .ab-two-inner-4 p{
+        font-size: 16px;
+        margin-top: 1rem;
+        word-spacing: 2px;
+    }
+
+    /* Headings */
+
+    .ab-two-4 h1{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .ab-two-inner-4{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        text-align: center;
+    }
+
+    .ab-two-inner-4 h1{
+        margin: 1rem 0;
+    }
+
+    /* Footer */
+
+    /* .aaa{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .foot h4{
+        margin-top: 3rem;
+        font-size: 14px;
+    }
+
+    /* General */
+/* 
+    .ab-two-inner-4 {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    } */
+
+    .hhh{
+        font-size: 18px;
+    } 
+
+}
